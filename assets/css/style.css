@@ -108,9 +108,9 @@
     background-position:80%;
   }
 
-  .hero-cta {
-    width: 35%;
-    text-align: right;
+  .hero-text {
+    width: 60%;
+    text-align: center;
     margin: 3.5%;
     color: #fff;
     font-size: 18px;
@@ -183,7 +183,7 @@
       flex-wrap: wrap;
       justify-content: center;
       margin: 0 auto;
-      max-width: 1200px;
+      
   }
 
 
@@ -217,12 +217,12 @@
   }
 
   .primary-work-item img {
-    width: 1000px;
+    width: 1200px;
     height: 500px;
   }
 
   .work-item img {
-      width: 500px;
+      width: 600px;
       height: 500px;
   }
 
@@ -244,28 +244,21 @@
       color: var(--primary-color);
   }
 
-  .contact-info iframe {
-    height: 400px;
-  }
-
-  .contact-info div {
-    color: white;
-  }
-
   .contact-info h3 {
     color: var(--primary-color);
     font-size: 32px;
   }
   
-  .contact-info p, .contact-info address {
+  .contact-info p {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 24px;
     font-style: normal;
   }
   
   .contact-info a {
-    color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-style: none;
   }
 
   .contact-info {
@@ -273,8 +266,6 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
-  
-  /* REACH OUT STYLES END */
 
   .flex-row {
     display: flex;
@@ -283,6 +274,10 @@
   .contact-info > * {
     flex: 1;
     margin: 15px;
+  }
+
+  .primary-background {
+      background-color: var(--quaternary-color);
   }
 
   /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -308,29 +303,19 @@
     font-size: 20px;
   }
 
-  footer h2, footer div {
+  footer h2 {
     text-align: center;
     width: 100%;
   }
 
-  .hero-cta, .hero-form {
-    width: 100%;
-  }
-  
-  .hero-cta {
+  .hero-text {
     text-align: center;
+    width: 100%;
   }
   .section-title {
     width: 80%;
   }
   
-  .trainer {
-    flex: 0 70%;
-  }
-  
-  .contact-info iframe{
-    flex: 1 100%;
-  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -339,36 +324,11 @@
   section {
     padding: 30px 15px;
   }
-  .step h3 {
-    flex: 1 100%;
-    text-align: center;
-  }
-
-  .step-info {
-    flex: 2 100%;
-    text-align: center;
-    justify-content: center;
-  }
-
-  .step-img {
-    flex: 0 32%;
-    margin-right: 0;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  .step-text {
-    flex: 100%;  
-  }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
  
-  .hero-form button {
-    width: 100%;
-  }
-
   .section-title {
     width: 95%;
   }
@@ -377,19 +337,12 @@
     width: 100%;
   }
 
-  .trainer {
-    flex: 0 100%;
-  }
-
   .contact-info {
     text-align: center;
   }
 
   .contact-info > * {
     flex: 0 100%;
-  }
-  .contact-form {
-    order: 3;
   }
 
 }
